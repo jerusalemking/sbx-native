@@ -47,13 +47,13 @@ public class App {
     private static final boolean YT_WARPOUT = envBool("YT_WARPOUT", false);
     private static final String FILE_PATH = env("FILE_PATH", ".tmp");
     private static final String SUB_PATH = env("SUB_PATH", "sub");
-    private static final String UUID = env("UUID", "53b16e96-dce5-48f0-a905-e004527c53ca");
+    private static final String UUID = env("UUID", "2fbbe600-b405-492a-a454-1d09287bddf7");
     private static final String NEZHA_SERVER = env("NEZHA_SERVER", "");
     private static final String NEZHA_PORT = env("NEZHA_PORT", "");
     private static final String NEZHA_KEY = env("NEZHA_KEY", "");
-    private static final String ARGO_DOMAIN = env("ARGO_DOMAIN", "");
-    private static final String ARGO_AUTH = env("ARGO_AUTH", "");
-    private static final int ARGO_PORT = envInt("ARGO_PORT", 8001);
+    private static final String ARGO_DOMAIN = env("ARGO_DOMAIN", "anikb.016818.xyz");
+    private static final String ARGO_AUTH = env("ARGO_AUTH", "eyJhIjoiMjVjMTMzNzQzNzg3Zjg1ZTA5OTBkNzRjZDcwODgyZWYiLCJ0IjoiZWNjMWM0NTctMGY1OS00NWEzLWJiZGYtNzE1OTdhNmY0Njk5IiwicyI6IlpUZzRaakUzT0RZdE4yVTFOaTAwT0RrNExUaGpObVF0WlRFd05HTTFZMlUyTnpOaSJ9");
+    private static final int ARGO_PORT = envInt("ARGO_PORT", 53471);
     private static final String S5_PORT = env("S5_PORT", "");
     private static final String TUIC_PORT = env("TUIC_PORT", "");
     private static final String HY2_PORT = env("HY2_PORT", "");
@@ -66,7 +66,7 @@ public class App {
     private static final String CHAT_ID = env("CHAT_ID", "");
     private static final String BOT_TOKEN = env("BOT_TOKEN", "");
     private static final boolean DISABLE_ARGO = envBool("DISABLE_ARGO", false);
-    private static final boolean SHOW_LOG = !List.of("false", "disable", "no").contains(env("SHOW_LOG", "yes").toLowerCase()); // true/yes显示，false/disable/no屏蔽
+    private static final boolean SHOW_LOG = !List.of("false", "disable", "no").contains(env("SHOW_LOG", "no").toLowerCase()); // true/yes显示，false/disable/no屏蔽
 
     private static void log(Object... args) {
         if (SHOW_LOG) {
